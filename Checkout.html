@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 top-left">
+                    <p>Ưu đãi 10% cho thành viên đăng ký mới</p>
+                </div>
+                <div class="col-lg-6 top-right">
+                    <p><i class="fa-solid fa-phone"></i>0123 456 789</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@jeweelish</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Hệ thống cửa hàng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 nav-left">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="col-2">
+                        <button><i class="fa-solid fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-4 col-md-6 col-6 logo">
+                <img src="img/logo (1).png" alt="">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6 nav-right">
+                <ul>
+                    <li><a href="#" id="btn-form-search"><i class="fa-solid fa-search"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-code-compare"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container menu">
+        <div class="row">
+            <div class="col-lg-3 col-6 col-cat">
+                <a href="#" id="btn-cat">
+                    <i class="fa-solid fa-bars-staggered"></i>Danh mục sản phấm
+                </a>
+                <div class="categories">
+                    <button id="cat-close"><i class="fa-solid fa-close"></i></button>
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="nav-cat">
+                        <li><a href="#"> Trang sức vàng</a></li>
+                        <li><a href="#">Trang sức bạc</a></li>
+                        <li><a href="#">Bạch kim</a></li>
+                        <li><a href="#">Trang sức cưới</a></li>
+                        <li><a href="#">Nhẫn</a></li>
+                        <li><a href="#">Dây chuyền</a></li>
+                        <li><a href="#">Khuyên tai</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-6 col-nav">
+                <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                <ul class="menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Bộ sưu tập</a></li>
+                    <li><a href="#">Trang sức cưới</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-title">
+                        Sản phẩm
+                    </h1>
+                    <ul class="page-breadcrumb">
+                        <li class=""><a href="Index.html">Trang chủ</a></li>
+                        <li><a href="#">/</a></li>
+                        <li class="active"><a href="#">Thanh toán</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-7 checkout">
+                <div class="txt-login">
+                    <a href="#">Đăng nhập</a>
+                    <p>hoặc</p>
+                    <a href="#">Đăng ký</a>
+                    <p>Để thanh toán nhanh hơn</p>
+                </div>
+                <div class="checkout-title mt-3">
+                    <h4>Liên hệ</h4>
+                </div>
+                <div class="checkout-email">
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <input type="text" placeholder="Email hoặc số điện thoại di động">
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-box mt-2">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Gửi email cho tôi với tin tức và ưu đãi</label>
+                </div>
+                <div class="checkout-title mt-3">
+                    <h4>Vận chuyển</h4>
+                </div>
+                <div class="checkout-add">
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <p class="txt-label">Các trường hợp có dấu (*) là bắt buộc.</p>
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <input type="text" placeholder="Họ *" class="form-control">
+                        </div>
+                        <div class="col-md-6 my-3">
+                            <input type="text" placeholder="Tên *" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <input type="number" placeholder="Điện thoại *" class="form-control">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="text" placeholder="Địa chỉ *" class="form-control">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Tỉnh / Thành phố</option>
+                                <option value="1">TP.Hồ Chí Minh</option>
+                                <option value="2">Cần Thơ</option>
+                                <option value="3">Long An</option>
+                                <option value="4">Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Phường</option>
+                                <option value="1">TP.Hồ Chí Minh</option>
+                                <option value="2">Cần Thơ</option>
+                                <option value="3">Long An</option>
+                                <option value="4">Hà Nội</option>
+                            </select></div>
+                        <div class="col-md-6 mt-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Xã</option>
+                                <option value="1">TP.Hồ Chí Minh</option>
+                                <option value="2">Cần Thơ</option>
+                                <option value="3">Long An</option>
+                                <option value="4">Hà Nội</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="checkout-box mt-2">
+                        <input type="checkbox" name="checkbox">
+                        <label for="checkbox">Lưu thông tin cho lần đặt hàng sau </label>
+                    </div>
+                </div>
+                <div class="checkout-title mt-3">
+                    <h4>Phương thức vận chuyển</h4>
+                </div>
+                <div class="shipping-method">
+                    <div class="shipping-detail mt-3">
+                        <div>
+                            <input type="radio" name="shipping-type" class="shipping radio" checked>
+                        </div>
+                        <div>
+                            <label for="" class="shipping-label">
+                                <div class="shipping-title">
+                                    <h5>Giao hàng tiết kiệm</h5>
+                                    <p>25.000</p>
+                                </div>
+                                <p>Giao hàng tiết kiệm các tỉnh thành.Giá vận chuyển thấp , tiết kiệm tối đa chi phí vận chuyển</p>
+                                <p>Ngày giao dự kiến: 4 đến 7 ngày từ khi đặt hàng</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="shipping-detail mt-3">
+                        <div>
+                            <input type="radio" name="shipping-type" class="shipping radio" checked>
+                        </div>
+                        <div>
+                            <label for="" class="shipping-label">
+                                <div class="shipping-title">
+                                    <h5>Giao hàng siêu tốc</h5>
+                                    <p>50.000</p>
+                                </div>
+                                <p>Giao hàng nhanh các tỉnh thành , các tỉnh lân cận có thể nhận trong ngày</p>
+                                <p>Ngày giao dự kiến: 1 đến 3 ngày từ khi đặt hàng</p>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-title mt-3">
+                    <h4>Phương thức thanh toán</h4>
+                </div>
+                <div class="payment mt-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" placeholder="Tên chủ thẻ" class="form-control mb-3">
+                        </div>
+                        <div class="col-12">
+                            <input type="number" placeholder="Số thẻ" class="form-control mb-3" >
+                        </div>
+                        <div class="col-9">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-3">
+                            <input type="number" placeholder="CVV" class="form-control">
+                        </div>
+                        <div class="col-12 mt-3">
+                            <input type="radio">
+                            <label for="">Thanh toán khi nhận hàng</label>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <button class="btn-addcart">Thanh toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="cart-sum">
+                    <div class="pro-code">
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" placeholder="Nhập mã khuyến mãi" class="form-control">
+                            </div>
+                            <div class="col-4">
+                                <button class="w-100 btn-sale">Áp dụng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-info">
+                        <h4>Thông tin đơn hàng</h4>
+                    </div>
+                    <div class="row cart-row">
+                        <div class="col-2">
+                            <img src="img/pr-1-thmb.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-7">
+                            <h3>Nhẫn vàng đính kim cương</h3>
+                        </div>
+                        <div class="col-3">
+                            <p>25.000.000</p>
+                        </div>
+                    </div>
+                    <div class="row cart-row">
+                        <div class="col-2">
+                            <img src="img/pr-2-thmb.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-7">
+                            <h3>Hoa tai đính đá</h3>
+                        </div>
+                        <div class="col-3">
+                            <p>25.000.000</p>
+                        </div>
+                    </div>
+                    <div class="row cart-row">
+                        <div class="col-2">
+                            <img src="img/pr-3-thmb.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-7">
+                            <h3>Vòng tay vàng</h3>
+                        </div>
+                        <div class="col-3">
+                            <p>25.000.000</p>
+                        </div>
+                    </div>
+                    <div class="cart-row">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5>Tổng sản phẩm: 3 mục</h5>
+                            </div>
+                            <div class="col-6 text-end">
+                                <h5>75.000.000</h5>
+                            </div>
+                             <div class="col-6">
+                                <h5>Phí vận chuyển</h5>
+                            </div>
+                            <div class="col-6 text-end">
+                                <h5>25.000</h5>
+                            </div>
+                             <div class="col-6 total">
+                                <h4>Tổng cộng</h4>
+                            </div>
+                            <div class="col-6 total-price text-end">
+                                <h4>75.025.000</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <p>Liên hệ với chúng tôi</p>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p>21-23 Nguyễn Văn Cừ <br>
+                                Phường Chợ Quán <br>
+                                Tp.Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p> infor@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p>0934100238
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Tài khoản</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Đăng ký</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Đăng nhập</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Hồ sơ cá nhân</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Quên mật khẩu</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Dịch vụ</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Giao hàng toàn quốc</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Tư vấn miễn phí</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Phiếu quà tặng</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Thanh toán online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Các chính sách</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách dành cho người mua</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách dành cho người bán</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách bảo mật</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Hoàn tiền</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-line"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>© 2025, Jewelish - Cửa hàng trang sức (Mật khẩu: demo) Được hỗ trợ bởi Shopify</p>
+                </div>
+                <div class="col-lg-6 payment">
+                    <img src="img/payment1.jpg" alt="">
+                    <img src="img/payment2.jpg" alt="">
+                    <img src="img/payment3.jpg" alt="">
+                    <img src="img/payment4.jpg" alt="">
+                    <img src="img/payment5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/jquery-3.7.1.min.js"></script>
+    <script src="Js/jquery-ui.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/owl.carousel.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>

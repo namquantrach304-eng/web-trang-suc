@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 top-left">
+                    <p>Ưu đãi 10% cho thành viên đăng ký mới</p>
+                </div>
+                <div class="col-lg-6 top-right">
+                    <p><i class="fa-solid fa-phone"></i>0123 456 789</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@jeweelish</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Hệ thống cửa hàng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 nav-left">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="col-2">
+                        <button><i class="fa-solid fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-4 col-md-6 col-6 logo">
+                <img src="img/logo (1).png" alt="">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6 nav-right">
+                <ul>
+                    <li><a href="#" id="btn-form-search"><i class="fa-solid fa-search"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-code-compare"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container menu">
+        <div class="row">
+            <div class="col-lg-3 col-6 col-cat">
+                <a href="#" id="btn-cat">
+                    <i class="fa-solid fa-bars-staggered"></i>Danh mục sản phấm
+                </a>
+                <div class="categories">
+                    <button id="cat-close"><i class="fa-solid fa-close"></i></button>
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="nav-cat">
+                        <li><a href="Products.html"> Trang sức vàng</a></li>
+                        <li><a href="Products.html">Trang sức bạc</a></li>
+                        <li><a href="Products.html">Bạch kim</a></li>
+                        <li><a href="Products.html">Trang sức cưới</a></li>
+                        <li><a href="Products.html">Nhẫn</a></li>
+                        <li><a href="Products.html">Dây chuyền</a></li>
+                        <li><a href="Products.html">Khuyên tai</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-6 col-nav">
+                <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                <ul class="menu">
+                    <li><a href="Products.html">Trang chủ</a></li>
+                    <li><a href="Products.html">Sản phẩm</a></li>
+                    <li><a href="Products.html">Bộ sưu tập</a></li>
+                    <li><a href="Products.html">Trang sức cưới</a></li>
+                    <li><a href="Products.html">Khuyến mãi</a></li>
+                    <li><a href="Products.html">Sự kiện</a></li>
+                    <li><a href="Products.html">Tin tức</a></li>
+                    <li><a href="Products.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-title">
+                        Sản phẩm
+                    </h1>
+                    <ul class="page-breadcrumb">
+                        <li class=""><a href="Index.html">Trang chủ</a></li>
+                        <li><a href="#">/</a></li>
+                        <li class="active"><a href="#">Giỏ hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 cart">
+        <div class="row">   
+            <div class="col-xl-6 col-lg-6 col-6 cart-img">Sản phẩm</div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-qty">Số lượng</div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-total">Tổng cộng</div>
+            <div class="col-12 section-line"></div>
+            <div class="col-xl-2 col-lg-2 col-3 cart-img">
+                <img src="img/pr-1-thmb.png" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-3 cart-name">
+                <h2>Nhẫn vàng đính kim cương</h2>
+                <p>25.000.000</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-qty">
+                <button class="btn-minus" id="minus1">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <input type="number" value="1" class="qty" id="qty1">
+                <button class="btn-plus" id="plus1">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button class="btn-delete">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-total">
+                <h4>25.000.000</h4>
+            </div>
+            <div class="col-12 section-line"></div>
+            <div class="col-xl-2 col-lg-2 col-3 cart-img">
+                <img src="img/pr-2-thmb.png" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-3 cart-name">
+                <h2>Nhẫn vàng đính kim cương</h2>
+                <p>25.000.000</p>
+                <p>Kích cỡ: L</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-qty">
+                <button class="btn-minus" id="minus2">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <input type="number" value="1" class="qty" id="qty2">
+                <button class="btn-plus" id="plus2">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button class="btn-delete">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-total">
+                <h4>25.000.000</h4>
+            </div>
+            <div class="col-12 section-line"></div>
+            <div class="col-xl-2 col-lg-2 col-3 cart-img">
+                <img src="img/pr-3-thmb.png" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-3 cart-name">
+                <h2>Nhẫn vàng đính kim cương</h2>
+                <p>25.000.000</p>
+                <p>Kích cỡ: M</p>
+                <p>Màu: vàng</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-qty">
+                <button class="btn-minus" id="minus3">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+                <input type="number" value="1" class="qty" id="qty3">
+                <button class="btn-plus" id="plus3">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button class="btn-delete">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-3 cart-total">
+                <h4>25.000.000</h4>
+            </div>
+            <div class="col-12 section-line"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ps-0">
+                <h4 class="mb-3">Thêm ghi chú cho đơn hàng</h4>
+                <textarea class="form-control" rows="5" placeholder="Chúng tôi có thể giúp gì cho bạn ?"></textarea>
+            </div>
+            <div class="col-lg-6 check text-end">
+                <h4>Tạm tính : <span>75.000.000</span></h4>
+                <p>Thuế và phí vận chuyển được tính khi thanh toán</p>
+                <a href="Checkout.html"><button class="btn-checked">Kiểm tra</button></a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <p>Liên hệ với chúng tôi</p>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p>21-23 Nguyễn Văn Cừ <br>
+                                Phường Chợ Quán <br>
+                                Tp.Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p> infor@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p>0934100238
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Tài khoản</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Đăng ký</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Đăng nhập</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Hồ sơ cá nhân</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Quên mật khẩu</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Dịch vụ</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Giao hàng toàn quốc</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Tư vấn miễn phí</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Phiếu quà tặng</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Thanh toán online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Các chính sách</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách dành cho người mua</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách dành cho người bán</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách bảo mật</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Hoàn tiền</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-line"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>© 2025, Jewelish - Cửa hàng trang sức (Mật khẩu: demo) Được hỗ trợ bởi Shopify</p>
+                </div>
+                <div class="col-lg-6 payment">
+                    <img src="img/payment1.jpg" alt="">
+                    <img src="img/payment2.jpg" alt="">
+                    <img src="img/payment3.jpg" alt="">
+                    <img src="img/payment4.jpg" alt="">
+                    <img src="img/payment5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/jquery-3.7.1.min.js"></script>
+    <script src="Js/jquery-ui.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/owl.carousel.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>

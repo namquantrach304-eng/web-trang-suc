@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/price_range_style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 top-left">
+                    <p>Ưu đãi 10% cho thành viên đăng ký mới</p>
+                </div>
+                <div class="col-lg-6 top-right">
+                    <p><i class="fa-solid fa-phone"></i>0123 456 789</p>
+                    <p><i class="fa-solid fa-envelope"></i>info@jeweelish</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Hệ thống cửa hàng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 nav-left">
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" placeholder="Tìm kiếm">
+                    </div>
+                    <div class="col-2">
+                        <button><i class="fa-solid fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-4 col-md-6 col-6 logo">
+                <img src="img/logo (1).png" alt="">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6 nav-right">
+                <ul>
+                    <li><a href="#" id="btn-form-search"><i class="fa-solid fa-search"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-code-compare"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                    <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container menu">
+        <div class="row">
+            <div class="col-lg-3 col-6 col-cat">
+                <a href="#" id="btn-cat">
+                    <i class="fa-solid fa-bars-staggered"></i>Danh mục sản phấm
+                </a>
+                <div class="categories">
+                    <button id="cat-close"><i class="fa-solid fa-close"></i></button>
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="nav-cat">
+                        <li><a href="Products.html"> Trang sức vàng</a></li>
+                        <li><a href="Products.html">Trang sức bạc</a></li>
+                        <li><a href="Products.html">Bạch kim</a></li>
+                        <li><a href="Products.html">Trang sức cưới</a></li>
+                        <li><a href="Products.html">Nhẫn</a></li>
+                        <li><a href="Products.html">Dây chuyền</a></li>
+                        <li><a href="Products.html">Khuyên tai</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-6 col-nav">
+                <button id="btn-menu"><i class="fa-solid fa-bars"></i></button>
+                <ul class="menu">
+                    <li><a href="Index.html">Trang chủ</a></li>
+                    <li><a href="Products.html">Sản phẩm</a></li>
+                    <li><a href="Products.html">Bộ sưu tập</a></li>
+                    <li><a href="Products.html">Trang sức cưới</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                    <li><a href="#">Sự kiện</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="page-title">
+                        Sản phẩm
+                    </h1>
+                    <ul class="page-breadcrumb">
+                        <li class=""><a href="Index.html">Trang chủ</a></li>
+                        <li><a href="#">/</a></li>
+                        <li class="active"><a href="#">Sản phẩm</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <button id="btn-filter">Lọc <i class="fa-solid fa-filter"></i></button>
+            <div class="col-lg-3" id="sidebar">
+                <button id="btn-sidebar-close"><i class="fa-solid fa-close"></i></button>
+                <div class=" sidebar-box price-range-block">
+                    <h4 class="sidebar-title">
+                        Giá
+                    </h4>
+                    <div class="sidebar-line"></div>
+                    <div id="slider-range" class="price-filter-range" name="rangeInput"></div>
+                    <div class="slider-value">
+                    <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" />
+                    <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" />
+                    </div>
+                    <div class="text-center w-100">
+                        <button class="price-range-search" id="price-range-submit">Tìm</button>
+                    </div>
+                    <div id="searchResults" class="search-results-block"></div>
+                </div>
+                <div class="sidebar-box">
+                    <h4 class="sidebar-title">
+                        Thương hiệu
+                    </h4>
+                    <div class="sidebar-line"></div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">PNJ</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Allen Sally</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Berlians</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Crown</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Wonder</label>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h4 class="sidebar-title">
+                        Loại sản phẩm
+                    </h4>
+                    <div class="sidebar-line"></div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Nhẫn vàng (5)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Nhẫn bạc (8)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Vòng cổ (4)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Vòng tay (10)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Mặt dây chuyên (2)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Bông tai (2)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Trang sức đá (4)</label>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h4 class="sidebar-title">
+                        Thương hiệu
+                    </h4>
+                    <div class="sidebar-line"></div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">PNJ</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Allen Sally</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Berlians</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Crown</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Wonder</label>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h4 class="sidebar-title">
+                        Sản phẩm nổi bật
+                    </h4>
+                    <div class="sidebar-line"></div>
+                    <div class="sidebar-pr">
+                        <a href="pr-detail.html">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="img/pr-1" class="w-100 mt-3" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h5>Nhẫn kim cương</h5>
+                                    <div class="pr-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="pr-price">20.000.000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-pr">
+                        <a href="pr-detail.html">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="img/pr-2" class="w-100 mt-3" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h5>Bông tai</h5>
+                                    <div class="pr-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="pr-price">10.000.000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sidebar-pr">
+                        <a href="pr-detail.html">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="img/pr-3" class="w-100 mt-3" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h5>Vòng tay</h5>
+                                    <div class="pr-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="pr-price">15.000.000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-1" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-1" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-2" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-3" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-4" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-5" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-6" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-7" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-8" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-1" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-1" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="pr-item">
+                            <a href="pr-detail.html">
+                                <div class="pr-img">
+                                    <img src="img/pr-1" class="w-100" alt="">
+                                    <div class="sale-tag">-10%</div>
+                                </div>
+                                <h3 class="pr-name">Nhẫn vàng đính đá</h3>
+                                <div class="pr-price">
+                                    <p class="old-price">25.000.000</p>
+                                    <p class="new-price">20.000.000</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class="paging">
+                            <li><a href="#"><i class="fa-solid fa-backward-fast"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-backward"></i></a></li>
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#"><i class="fa-solid fa-forward"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-forward-fast"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <footer class="bg-footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-title">
+                        <p>Liên hệ với chúng tôi</p>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p>21-23 Nguyễn Văn Cừ <br>
+                                Phường Chợ Quán <br>
+                                Tp.Hồ Chí Minh
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p> infor@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="footer-content">
+                            <p>0934100238
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Tài khoản</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Đăng ký</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Đăng nhập</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Hồ sơ cá nhân</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Quên mật khẩu</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Dịch vụ</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Giao hàng toàn quốc</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Tư vấn miễn phí</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Phiếu quà tặng</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Thanh toán online</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Các chính sách</h4>
+                    <ul class="nav-footer">
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách dành cho người mua</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách dành cho người bán</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Chính sách bảo mật</a></li>
+                        <li><a href="#"><i class="fa-solid fa-arrow-right"></i>Hoàn tiền</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-line"></div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>© 2025, Jewelish - Cửa hàng trang sức (Mật khẩu: demo) Được hỗ trợ bởi Shopify</p>
+                </div>
+                <div class="col-lg-6 payment">
+                    <img src="img/payment1.jpg" alt="">
+                    <img src="img/payment2.jpg" alt="">
+                    <img src="img/payment3.jpg" alt="">
+                    <img src="img/payment4.jpg" alt="">
+                    <img src="img/payment5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Js/jquery-3.7.1.min.js"></script>
+    <script src="Js/jquery-ui.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/owl.carousel.js"></script>
+    <script src="Js/price_range_script.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>
