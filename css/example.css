@@ -1,0 +1,26 @@
+.thumbnails {
+	overflow: hidden;
+	margin: 1em 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	flex-direction: column;
+}
+
+.thumbnails li {
+	 
+	width: 100%;
+	margin: 8px 1%	;
+}
+
+.thumbnails img {
+	display: block;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+.toggle {
+	display: block;
+	margin: 10px auto 1.5em;
+}
